@@ -26,7 +26,11 @@ elForm.addEventListener("submit", function(evt){
 
   if(inputValue % 3 == 0 && inputValue % 5 == 0 && inputValue != 0 ){
     fizbuzzArray.unshift(inputValue);
+    fizzArray.unshift(inputValue);
+    buzzArray.unshift(inputValue);
     elFizzbuzzContent.textContent = fizbuzzArray.join(", ");
+    elFizzContent.textContent =fizzArray.join(", ");
+    elBuzzContent.textContent = buzzArray.join(", ");
     console.log(fizbuzzArray);
     alertRemoveClass();
   }else if (inputValue % 3 == 0 && inputValue != 0){
